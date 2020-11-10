@@ -1,0 +1,66 @@
+.container {
+  height: auto;
+  width: auto;
+}
+.card {
+  position: relative;
+  min-height: 420px;
+  height: auto;
+  width: 300px;
+  background: rgb(118, 234, 255);
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3); */
+}
+.card hr {
+  margin: 0 30px;
+}
+/* .border {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 490px;
+  width: 270px;
+  border: 3px double #aaa;
+} */
+.avatar {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px auto 0px;
+  margin-bottom: 40px;
+}
+.avatar img {
+  width: 200px;
+  margin-left: -10px;
+}
+.stats {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+}
+.stats > div {
+}
+.stats p {
+  margin: 5px;
+}
+.stats h2 {
+  text-align: center;
+  font-family: "Vidaloka", cursive;
+  font-size: 20px;
+  margin: 5px 0 10px;
+}
+.GTContainer {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
