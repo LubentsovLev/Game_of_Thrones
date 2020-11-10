@@ -1,6 +1,6 @@
 import "./App.css";
 import Comment from "./components/comments/Comment";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/redux_store";
 import GameOfThronesContainer from "./components/GameOfThrones/GameOfThronesContainer";
@@ -24,11 +24,11 @@ const MainApp = (props) => {
   return (
     // <BrowserRouter basename={process.env.PUBLIC_URL}></BrowserRouter>
     // <HashRouter></HashRouter>
-    <HashRouter>
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 

@@ -49,6 +49,7 @@ const Comment = (props) => {
   const submit = (values) => {
     props.sendComments(values);
   };
+  
   return (
     <div>
       <CommentsReduxForm onSubmit={submit} />
