@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Game_of_Thrones/static/css/main.adcc8a60.chunk.css",
-    "main.js": "/Game_of_Thrones/static/js/main.4015e3bf.chunk.js",
-    "main.js.map": "/Game_of_Thrones/static/js/main.4015e3bf.chunk.js.map",
+    "main.css": "/Game_of_Thrones/static/css/main.ef3c5601.chunk.css",
+    "main.js": "/Game_of_Thrones/static/js/main.a3220538.chunk.js",
+    "main.js.map": "/Game_of_Thrones/static/js/main.a3220538.chunk.js.map",
     "runtime-main.js": "/Game_of_Thrones/static/js/runtime-main.758caecd.js",
     "runtime-main.js.map": "/Game_of_Thrones/static/js/runtime-main.758caecd.js.map",
-    "static/js/2.10887055.chunk.js": "/Game_of_Thrones/static/js/2.10887055.chunk.js",
-    "static/js/2.10887055.chunk.js.map": "/Game_of_Thrones/static/js/2.10887055.chunk.js.map",
+    "static/js/2.680fb415.chunk.js": "/Game_of_Thrones/static/js/2.680fb415.chunk.js",
+    "static/js/2.680fb415.chunk.js.map": "/Game_of_Thrones/static/js/2.680fb415.chunk.js.map",
     "static/js/3.fa43808e.chunk.js": "/Game_of_Thrones/static/js/3.fa43808e.chunk.js",
     "static/js/3.fa43808e.chunk.js.map": "/Game_of_Thrones/static/js/3.fa43808e.chunk.js.map",
     "index.html": "/Game_of_Thrones/index.html",
-    "static/css/main.adcc8a60.chunk.css.map": "/Game_of_Thrones/static/css/main.adcc8a60.chunk.css.map",
-    "static/js/2.10887055.chunk.js.LICENSE.txt": "/Game_of_Thrones/static/js/2.10887055.chunk.js.LICENSE.txt",
+    "static/css/main.ef3c5601.chunk.css.map": "/Game_of_Thrones/static/css/main.ef3c5601.chunk.css.map",
+    "static/js/2.680fb415.chunk.js.LICENSE.txt": "/Game_of_Thrones/static/js/2.680fb415.chunk.js.LICENSE.txt",
     "static/media/45.6cf37826.svg": "/Game_of_Thrones/static/media/45.6cf37826.svg",
     "static/media/logo.103b5fa1.svg": "/Game_of_Thrones/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.758caecd.js",
-    "static/js/2.10887055.chunk.js",
-    "static/css/main.adcc8a60.chunk.css",
-    "static/js/main.4015e3bf.chunk.js"
+    "static/js/2.680fb415.chunk.js",
+    "static/css/main.ef3c5601.chunk.css",
+    "static/js/main.a3220538.chunk.js"
   ]
 }
