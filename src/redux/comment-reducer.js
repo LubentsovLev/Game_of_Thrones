@@ -5,7 +5,7 @@ import { commentsAPI } from "../api/api";
 const ADD_COMMENT = "COMMENT/SET_COMMENT";
 
 let initialState = {
-  Comment: { title: "", body: "", userId: "" },
+  Comment: {},
   isFetching: false,
 };
 
@@ -24,16 +24,9 @@ export const addComments = (comment) => {
     comment,
   };
 };
-export const sendComments = (title, body, userId) => async (dispath) => {
-  // let packedData = JSON.stringify({
-  //   title,
-  //   body,
-  //   userId,
-  // });
-  let response = await commentsAPI.sendComment(title, body, userId);
-  let comment = { title, body, userId };
-  dispath(addComments(comment));
-  // let response = commentsAPI.sendComment(comment);
+export const sendComments = (values) => async (dispath) => {
+  let response = await commentsAPI.sendComment(values);
+  dispath(addComments(response.data.packedData));
 };
 
 export default commentreduser;

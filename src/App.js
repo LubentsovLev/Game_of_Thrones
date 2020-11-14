@@ -6,6 +6,7 @@ import store from "./redux/redux_store";
 import GameOfThronesContainer from "./components/GameOfThrones/GameOfThronesContainer";
 import { NavLink, Redirect, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
+import StickyFooter from "./components/material_tp/M_footer";
 
 function App() {
   return (
@@ -13,10 +14,16 @@ function App() {
       <header>
         <Header />
       </header>
-      <Switch>
-        <Route path="/Comment" render={() => <Comment />} />
-        <Route path="/Posts" render={() => <GameOfThronesContainer />} />
-      </Switch>
+      <div className="app__main">
+        <Switch>
+          <Route exact path="/" render={() => <Redirect to={"/Characters"} />} />
+          <Route path="/Comment" render={() => <Comment />} />
+          <Route path="/Characters" render={() => <GameOfThronesContainer />} />
+        </Switch>
+      </div>
+      <footer>
+        <StickyFooter />
+      </footer>
     </div>
   );
 }
@@ -24,11 +31,11 @@ const MainApp = (props) => {
   return (
     // <BrowserRouter basename={process.env.PUBLIC_URL}></BrowserRouter>
     // <HashRouter></HashRouter>
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

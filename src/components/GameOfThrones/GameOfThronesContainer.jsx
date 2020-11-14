@@ -22,16 +22,19 @@ class GameOfThronesContainer extends React.PureComponent {
   render() {
     return (
       <>
-        <Paginator
-          // currentPage={currentPage}
-          // onPageChanged={onPageChanged}
-          // totalItemsCount={totalItemsCount}
-          // pageSize={pageSize}
-          currentPage={this.props.currentPage}
-          onPageChanged={this.props.GetCharacters}
-          totalItemsCount={this.props.totalItemsCount}
-          pageSize={this.props.pageSize}
-        />
+        <div className={this.props.isFetching ? "noPg" : "isPg"}>
+          <Paginator
+            // currentPage={currentPage}
+            // onPageChanged={onPageChanged}
+            // totalItemsCount={totalItemsCount}
+            // pageSize={pageSize}
+            currentPage={this.props.currentPage}
+            onPageChanged={this.props.GetCharacters}
+            totalItemsCount={this.props.totalItemsCount}
+            pageSize={this.props.pageSize}
+            buttonPage = {6}
+          />
+        </div>
         {this.props.isFetching ? (
           <Loader />
         ) : (
@@ -40,6 +43,7 @@ class GameOfThronesContainer extends React.PureComponent {
             currentPage={this.props.currentPage}
             pageSize={this.props.pageSize}
             GetCharacters={this.props.GetCharacters}
+            isFetching={this.props.isFetching}
           />
         )}
       </>

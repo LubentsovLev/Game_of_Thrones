@@ -1,7 +1,15 @@
 .App {
   text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  min-height: 100vh;
+}
+.app__main {
+  min-height: 80vh;
+  padding: 10px 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -91,6 +99,7 @@
   resize: none;
   margin-bottom: 7px;
   width: 100%;
+  cursor: pointer;
 }
 .comForm {
   flex-direction: column;
@@ -100,4 +109,18 @@
   max-width: 500px;
   margin: 0 auto;
   padding: 20px 10px 0;
+}
+.noPg {
+  opacity: 0.5;
+  cursor: progress;
+  pointer-events: none;
+  position: relative;
+}
+.noPg::before {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

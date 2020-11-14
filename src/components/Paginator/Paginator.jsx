@@ -3,7 +3,14 @@ import s from "./Paginator.module.css";
 import cn from "classnames";
 
 let Paginator = (
-  { totalItemsCount, pageSize, currentPage, onPageChanged, portionSize = 5 },
+  {
+    totalItemsCount,
+    pageSize,
+    currentPage,
+    onPageChanged,
+    portionSize = 5,
+    buttonPage = 1,
+  },
   props
 ) => {
   let pagesCount = Math.ceil(totalItemsCount / pageSize);
@@ -12,7 +19,7 @@ let Paginator = (
     pages.push(i);
   }
   let portionCount = Math.ceil(pagesCount / portionSize);
-  let [portionNumber, setPortionNumber] = useState(1);
+  let [portionNumber, setPortionNumber] = useState(buttonPage ? buttonPage : 1);
   let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
   let rightPortionPageNumber = portionNumber * portionSize;
 

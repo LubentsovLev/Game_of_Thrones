@@ -6,9 +6,9 @@ const SET_CURRNET_PAGE = "USERS/SET_CURRNET_PAGE";
 
 let initialState = {
   characters: [],
-  pageSize: 5,
+  pageSize: 10,
   totalItemsCount: 2136,
-  currentPage: 1,
+  currentPage: 27,
   isFetching: false,
 };
 

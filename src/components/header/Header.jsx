@@ -16,7 +16,7 @@ let Header = () => {
         </NavLink>
         <NavLink
           className="btn btn-info"
-          to="/Posts"
+          to="/Characters"
           activeClassName={"ln_active"}
         >
           Game Of Thrones

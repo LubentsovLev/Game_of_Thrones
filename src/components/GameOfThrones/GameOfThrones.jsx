@@ -27,9 +27,12 @@ let GameOfThrones = (props) => {
       } */}
         {props.characters.map((i) => {
           return (
-            <div key={i + i.aliases[0]} className={s.container}>
+            <div
+              key={i.gender + i.culture + i.name + i.aliases[0]}
+              className={s.container}
+            >
               <div className={s.card}>
-                <div className={s.border}></div>
+                <div className={s.border}>{}</div>
                 <div className={s.avatar}>
                   <img
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199526/jonsnow.jpg"
@@ -37,15 +40,33 @@ let GameOfThrones = (props) => {
                   />
                 </div>
                 <div className={s.stats}>
-                  <h2>{i.aliases[0]}</h2>
+                  <h2> {i.name ? i.name : i.aliases[0]}</h2>
                   <div>
-                    <p>gender:{i.gender}</p>
-                    <p>culture:{i.culture}</p>
-                    {i.name ? <p>Location: {i.name}</p> : null}
+                    <p>
+                      <b>gender:</b>
+                      {i.gender}
+                    </p>
+                    <p>
+                      {i.culture ? (
+                        <p>
+                          <b>culture:</b> {i.culture}
+                        </p>
+                      ) : null}
+                    </p>
+                    {i.born ? (
+                      <p>
+                        <b>born:</b> {i.born}
+                      </p>
+                    ) : null}
+                    {i.died ? (
+                      <p>
+                        <b>died:</b> {i.died}
+                      </p>
+                    ) : null}
 
-                    <blockquote>
+                    {/* <blockquote>
                       “The only time a man can be brave is when he is afraid.”
-                    </blockquote>
+                    </blockquote> */}
                     {/* <Link component="button" variant="body2" href={i.url}>
                       <a href={i.url}>More info</a>
                     </Link> */}
@@ -64,6 +85,7 @@ let GameOfThrones = (props) => {
         color="primary"
         onClick={() => {
           props.GetCharacters(props.currentPage + 1, props.pageSize);
+          console.log(props.characters);
         }}
       >
         Next page

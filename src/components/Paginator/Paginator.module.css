@@ -1,70 +1,90 @@
-.selected_page{
-    font-weight: bold;
-    cursor: pointer;
-    padding-right: 4px;
-    padding-left: 4px;
-    
-  }
-  .selected_pages{
-    padding-right: 4px;
-    padding-left: 4px;
-    cursor: pointer;
-  }
-  .inner{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.selected_page {
+  font-weight: bold;
+  cursor: pointer;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.selected_pages {
+  padding-right: 4px;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.inner {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pagin {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pagin span {
+  text-align: center;
+}
 
-  }
-  .pagin{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  
-  }
-  .pagin span{
-    text-align: center;
-  }
-  
 .paginator {
   margin: 10px;
 }
-.pageNumber{
+.pageNumber {
   padding: 3px;
-  background-color: rgb(182, 220, 255);
+  background-color: transparent;
   border-radius: 5px;
   margin-right: 3px;
   margin-left: 3px;
   cursor: pointer;
   font-size: 11px;
-    width: 25px;
+  width: 25px;
   display: inline-block;
+  border: 0.5px solid #73c0ff;
+  color: rgb(129, 129, 129);
 }
 
 .pageNumber.selectedPage {
   font-weight: bold;
-  border-color: black;
+  border-color: rgb(0, 110, 255);
   cursor: pointer;
+  color: rgb(0, 162, 255);
 }
-.btn__prev{
-  border: none;
-  background-color: rgb(78, 255, 181);
-  font-size: 10px;
-  padding: 8px;
-  border-radius: 5px;
+.btn__prev {
   cursor: pointer;
+  color: #008cff;
+  border: 1px solid rgba(144, 202, 249, 0.5);
+  background-color: transparent;
+  padding: 6px 16px;
+  font-size: 10px;
+  min-width: 34px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
   margin-right: 10px;
 }
-.btn__next{
-  border: none;
-  background-color: rgb(78, 255, 181);
-  font-size: 10px;
-  padding: 8px;
-  border-radius: 5px;
+.btn__next {
   cursor: pointer;
+  color: #008cff;
+  border: 1px solid rgba(144, 202, 249, 0.5);
+  background-color: transparent;
+  padding: 6px 16px;
+  font-size: 10px;
+  min-width: 34px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
   margin-left: 10px;
 }
-.btn{
+.btn {
   display: inline;
 }

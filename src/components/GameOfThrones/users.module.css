@@ -63,4 +63,6 @@
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
+  max-width: 1800px;
+  margin: 0 auto;
 }
